@@ -1,0 +1,71 @@
+Part One: Solidify Terminology
+In your own terms, define the following terms:
+
+What is HTTP?
+A protocol that allows communication between browsers and servers in the form of text, sound, images, ect.
+
+What is a URL?
+A web address that consists of multiple parts suchs as protocols, hostname, port, paths named resources, and queries.
+
+What is DNS?
+Turns IP addresses into a more readable name called domain name services which makes it easier for users to type and remember.
+
+What is a query string?
+Is a resource/path that provides information such as searched terms or other data.
+
+What are two HTTP verbs and how are they different?
+GET - Are requests that don't change server data and are normally sent using a header.
+POST - Are requests that change server data and are normally sent using a body.
+
+What is an HTTP request?
+A request in the form of a URL made by a client to a server attempting to access information on that server.
+
+What is an HTTP response?
+Server response to the client that contains the content or information requested by that client.
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+Information with values passed via a HTTP request or response.
+
+Request example:
+
+:authority: www.reddit.com
+:method: POST
+:path: /
+:scheme: https
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.9
+content-length: 7040
+content-type: text/plain
+cookie: csv=2; edgebucket=TxiKsjgx61d0emOgqW; recent_srs=t5_378go%2Ct5_2rfxx%2Ct5_2tugi%2Ct5_32s02%2Ct5_2qwj8%2C; 
+origin: https://www.reddit.com
+referer: https://www.reddit.com/sw.js?v=v1.25.0
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 OPR/81.0.4196.52
+x-signature-v2: key=Desktop2x3, mac=a36657010d632c9774b0b7b7f4a8d667ac3f3b20346c29cce693dc8f4eceeb24
+
+
+Post Example:
+
+accept-ranges: bytes
+access-control-allow-headers: X-Signature,X-Signature-v2,Content-Type,Origin,Accept,X-origination-host,X-origination-path
+access-control-allow-methods: POST, OPTIONS
+access-control-allow-origin: *
+access-control-max-age: 1728000
+cache-control: private, max-age=3600
+content-length: 2
+content-type: application/json
+date: Tue, 30 Nov 2021 18:34:38 GMT
+server: snooserv
+strict-transport-security: max-age=31536000; includeSubdomains
+vary: Origin
+via: 1.1 varnish
+x-clacks-overhead: GNU Terry Pratchett
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+The browser looks up the IP for the DNS, makes a connection and requests from the server. The server then responds with the information or content that is then loaded into the client's browser.
